@@ -1,7 +1,10 @@
+# Handheld reader
+
 import cv2
-
 from cvzone.HandTrackingModule import handDetector
-
+"""
+Crea un reconocimiento de manos
+"""
 detector = handDetector(detectionCon = 0.8, maxHands = 2)
 
 video = cv2.VideoCapture(1)  #Switch webcam
